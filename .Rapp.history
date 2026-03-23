@@ -1,0 +1,25 @@
+plot(cars)
+ls()
+getwd()
+setwd("/Users/mac/Documents/GitHub/ECMA_2026")
+ls()
+y<- read.csv("data/survey_data_spreadsheet_correct_22_03_26.csv",sep=";")
+y
+y<- read.csv("data/survey_data_spreadsheet_correct_22_03_26.csv",sep="")
+y<- read.csv("data/survey_data_spreadsheet_correct_22_03_26.csv",sep="\t")
+y
+head(y)
+tail(y)
+y<- y[1:88]
+y[1:88]
+dim(y)
+y<-y[1:88]
+y<-y[1:88,]
+y<-y[1:88,1:8]
+y$species
+mean(y$weight_g)
+mean(y$weight_g na.rm=TRUE)
+mean(y$weight_.g.,na.rm=TRUE)
+mean(y$`weight_.g.`,na.rm=TRUE)
+class(y$`weight_.g.`)
+mean(as.numeric(y$`weight_.g.`),na.rm=TRUE)
